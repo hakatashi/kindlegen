@@ -1,0 +1,31 @@
+{
+  "name": "kindlegen",
+  "version": "1.0.0",
+  "description": "Simple Node.js wrapper of kindlegen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hakatashi/kindlegen.git"
+  },
+  "keywords": [
+    "epub",
+    "ebook",
+    "mobi",
+    "kindle",
+    "kindlegen",
+    "wrapper"
+  ],
+  "author": {
+    "name": "Koki Takahashi",
+    "email": "hakatasiloving@gmail.com",
+    "url": "https://hakatashi.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hakatashi/kindlegen/issues"
+  },
+  "homepage": "https://github.com/hakatashi/kindlegen#readme"
+}
