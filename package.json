@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/hakatashi/kindlegen/issues"
   },
-  "homepage": "https://github.com/hakatashi/kindlegen#readme"
+  "homepage": "https://github.com/hakatashi/kindlegen#readme",
+  "dependencies": {
+    "temp": "^0.8.3"
+  }
 }
