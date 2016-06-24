@@ -8,6 +8,9 @@
     "install": "node install.js",
     "test": "npm run build && mocha"
   },
+  "files": [
+    "*.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hakatashi/kindlegen.git"
