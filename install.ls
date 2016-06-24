@@ -8,4 +8,4 @@ bin-url = switch process.platform
   | \win32 => 'http://kindlegen.s3.amazonaws.com/kindlegen_win32_v2_9.zip'
   | otherwise => throw new Error 'Unsupported platform'
 
-console.log bin-url
+download bin-url, \bin, {+extract} .then -> console.log 'Download completed'
