@@ -12,7 +12,7 @@ Simple Node.js wrapper for official kindlegen program
 
 * Node.js v4 or higher
 * Windows, Linux, OS X
-* Installing `kindlegen` for your PATH is **not required**. It will be automatically installed locally.
+* Installing `kindlegen` into your PATH is **not required**. It will be automatically installed locally.
 
 # Install
 
