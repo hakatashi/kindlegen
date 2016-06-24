@@ -6,7 +6,7 @@ kindlegen for Node.js
 [travis-image]: https://travis-ci.org/hakatashi/kindlegen.svg?branch=master
 [travis-url]: https://travis-ci.org/hakatashi/kindlegen
 
-Simple Node.js wrapper for official kindlegen program
+Simple Node.js wrapper of the official kindlegen program
 
 # Supported
 

@@ -1,6 +1,6 @@
 {
   "name": "kindlegen",
-  "description": "Simple Node.js wrapper for official kindlegen program",
+  "description": "Simple Node.js wrapper of the official kindlegen program",
   "main": "index.js",
   "scripts": {
     "build": "lsc -co . .",
