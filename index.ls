@@ -1,5 +1,6 @@
 require! {
   child_process: {spawn}
+  path
   temp
   fs
 }
@@ -7,15 +8,24 @@ require! {
 module.exports = (epub, callback) ->
   temp.track!
 
-  error, input-file <- temp.open \node-kindlegen
+  error, temp-dir <- temp.mkdir \node-kindlegen
   return callback error if error
 
-  console.log input-file.path
+  input-path = path.join temp-dir, 'input.epub'
+  output-path = path.join temp-dir, 'output.mobi'
 
-  error, output-file <- temp.open \node-kindlegen
+  error, written, string <- fs.write-file input-path, epub
   return callback error if error
 
-  error, written, string <- fs.write input-file.fd, epub
+  kindlegen = spawn do
+    path.resolve __dirname, 'bin/kindlegen'
+    <[input.epub -c2 -verbose -o output.mobi]>
+    {cwd: temp-dir}
+
+  code <- kindlegen.on \close
+  return callback new Error "kindlegen returned error #{code}" if code not in [0 1]
+
+  error, mobi <- fs.read-file output-path
   return callback error if error
 
-  callback!
+  callback null, mobi
