@@ -3,8 +3,9 @@ node_js:
   - 'node'
   - '5'
   - '0.12'
-before_install:
-  - npm run build
+install:
+  - npm install --ignore-scripts
+  - npm install
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
