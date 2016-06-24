@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/hakatashi/kindlegen#readme",
   "dependencies": {
+    "download": "^5.0.2",
     "temp": "^0.8.3"
   }
 }
