@@ -5,6 +5,7 @@ node_js:
   - '0.12'
 install:
   - npm install --ignore-scripts
+  - npm run build
   - npm install
 branches:
   except:
