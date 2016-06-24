@@ -1,12 +1,12 @@
 {
   "name": "kindlegen",
-  "version": "1.0.0",
   "description": "Simple Node.js wrapper for official kindlegen program",
   "main": "index.js",
   "scripts": {
     "build": "lsc -co . .",
     "install": "node install.js",
-    "test": "npm run build && mocha"
+    "test": "npm run build && mocha",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "files": [
     "*.js"
@@ -40,6 +40,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "livescript": "^1.5.0",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "semantic-release": "^4.3.5"
   }
 }
