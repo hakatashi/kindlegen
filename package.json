@@ -4,6 +4,7 @@
   "description": "Simple Node.js wrapper of kindlegen",
   "main": "index.js",
   "scripts": {
+    "build": "lsc -co . .",
     "install": "node install.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
