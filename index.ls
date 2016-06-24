@@ -20,7 +20,7 @@ module.exports = (epub, callback) ->
   kindlegen = spawn do
     path.resolve __dirname, 'bin/kindlegen'
     <[input.epub -c2 -verbose -o output.mobi]>
-    {cwd: temp-dir}
+    {cwd: temp-dir, env: {}}
 
   code <- kindlegen.on \close
   return callback new Error "kindlegen returned error #{code}" if code not in [0 1]
