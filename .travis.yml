@@ -3,6 +3,8 @@ node_js:
   - 'node'
   - '5'
   - '0.12'
+before_install:
+  - npm run build
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
