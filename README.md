@@ -1,6 +1,8 @@
 kindlegen for Node.js
 =====================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hakatashi/kindlegen.svg)](https://greenkeeper.io/)
+
 [![Build Status][travis-image]][travis-url]
 
 [travis-image]: https://travis-ci.org/hakatashi/kindlegen.svg?branch=master
