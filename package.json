@@ -3,10 +3,8 @@
   "description": "Simple Node.js wrapper of the official kindlegen program",
   "main": "index.js",
   "scripts": {
-    "build": "lsc -co . .",
     "install": "node install.js",
-    "test": "npm run build && mocha",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "test": "mocha"
   },
   "files": [
     "*.js"
@@ -39,8 +37,6 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "livescript": "^1.5.0",
-    "mocha": "^3.0.0",
-    "semantic-release": "^6.3.2"
+    "mocha": "^3.0.0"
   }
 }
